@@ -5,4 +5,7 @@
     - name: writing my first task
       debug:
         msg: "Hello, this is a message displayed my first playbook is operationing!"
+    - name: writing my 2nd task
+      debug:
+        msg: "hello, this is my second msg for same playbook"
 ...
