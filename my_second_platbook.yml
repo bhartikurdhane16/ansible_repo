@@ -8,7 +8,7 @@
     - name: writing my 2nd task
       debug:
         msg: "hello, this is my second msg for same playbook"
-    - name: bharti k
+    - hobbies: my hobbies
       hobbies:
         - painting
         - coocking
