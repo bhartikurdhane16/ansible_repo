@@ -6,8 +6,8 @@
       debug:
         msg: "hello everyone"
     - name: my hobbies
-        hobbies:
-           - painting
-           - coocking
-           - listing a music
+      hobbies:
+        - painting
+        - coocking
+        - listing a music
 ...
