@@ -2,13 +2,10 @@
 - name: my second playbook
   hosts: all
   tasks:
-    - name: writing my second playbook
+    - name: my first task
       debug:
         msg: "hello everyone"
-  person:      
-    - name: bharti k
-      hobbies:
-        - painting
-        - coocking
-        - listing a music
+    - name: my second task
+      debug:
+        msg: "good morning"
 ...
