@@ -1,7 +1,7 @@
 ---
 - name: my second playbook
   hosts: all
-  task:
+  tasks:
     - name: writing my second playbook
       debug:
         msg: "hello everyone"
