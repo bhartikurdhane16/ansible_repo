@@ -39,6 +39,7 @@
           you are the most wonderful person i have met,
           
     - name: from bottem of my heart
+      debug:
         msg: |  
           i always want you as my krishna who guide me, support me & stay alway with me as krishna stay's with arjuna & draupadi
           thank you so much for beeing part of my journy"             
