@@ -5,6 +5,7 @@
     - name: writing my second playbook
       debug:
         msg: "hello everyone"
+    - name: bharti k
       hobbies:
         - painting
         - coocking
