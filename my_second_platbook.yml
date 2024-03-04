@@ -23,4 +23,12 @@
           - lunch arount 1:30 pm
           - tea around 5:00 pm
           - dinner arount 9:30 pm 
+    - name: my address details
+      debug:
+        msg: 
+          city: ch. Sambhaji Nagar
+          state: Maharashtra
+          Country: India
+          
+             
 ...
