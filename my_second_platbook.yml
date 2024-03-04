@@ -8,9 +8,9 @@
     - name: my second task
       debug:
         msg: "good morning"
-    - name: my hobbies
+    - name: my hobbies list
       debug:
-        hobbines:
+        msg:
           - paining
           - coocking
           - music
