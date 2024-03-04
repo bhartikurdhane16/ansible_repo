@@ -1,6 +1,6 @@
 ---
 - name: my second playbook
-  hosts: all
+  hosts: 172.31.10.252 
   tasks:
     - name: writing my second playbook
       debug:
