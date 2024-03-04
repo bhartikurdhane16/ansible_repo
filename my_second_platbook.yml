@@ -29,6 +29,18 @@
           city: ch. Sambhaji Nagar
           state: Maharashtra
           Country: India
-          
+    - name: msg for you
+      debug:
+        msg: |
+          heyyyy
+          good morning
+          how are you doing??????
+          you know what,
+          you are the most wonderful person i have met,
+          and i dont want to loose you
+        msg: |
+          i always want you as my krishna who guide me, support me & stay alway with me as krishna stay's with arjuna & draupadi
+          thank you so much for beeing part of my journy" 
+
              
 ...
