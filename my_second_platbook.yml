@@ -34,12 +34,9 @@
         msg: |
           heyyyy
           good morning
-          how are you doing??????
-          you know what,
-          you are the most wonderful person i have met,
-          
-    - name: anurang
+          how are you doing??????      
+    - name: second msg
       debug:
         msg: |  
-          thank u            
+          hello,i am doing well            
 ...
