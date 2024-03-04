@@ -1,0 +1,8 @@
+---
+- name: my second playbook
+  host: all
+  task:
+    - name: "writing my second playbook"
+      debug:
+        msg: "hello everyone"
+...
