@@ -5,8 +5,7 @@
     - name: writing my second playbook
       debug:
         msg: "hello everyone"
-    - name: hobbies
-      hobbies:
+        hobbies:
         - painting
         - coocking
         - listing a music
