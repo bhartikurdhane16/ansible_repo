@@ -8,4 +8,10 @@
     - name: my second task
       debug:
         msg: "good morning"
+    - name: my hobbies
+      debug:
+        hobbines:
+          - paining
+          - coocking
+          - music
 ...
