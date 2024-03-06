@@ -3,21 +3,26 @@
   hosts: all
   become: yes #command to run task with root prevelleges
   tasks:
-    - name: print msg
-      debug:
-        msg: "hello world"
-    - name: Update apt package cache
-      apt:
-        update_cache: yes
-    - name: install apache2
-      apt:
-        name: apache2
-        state: present
-    - name: ensure apache2 started & enabled
+    #- name: print msg
+      #debug:
+        #msg: "hello world"
+    #- name: Update apt package cache
+      #apt:
+        #update_cache: yes
+    #- name: install apache2
+      #apt:
+        #name: apache2
+        #state: present
+    #- name: ensure apache2 started & enabled
+      #service:
+        #name: apache2 
+        #state: started  
+        #enabled: yes
+    - name: stop apache2
       service:
-        name: apache2 
-        state: started  
-        enabled: yes
+       name: apache2
+       state: stoped
+       enabled: no
     #- name: install httpd
       #apt:
         #name: httpd
