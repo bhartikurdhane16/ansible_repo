@@ -18,16 +18,21 @@
         #name: apache2 
         #state: started  
         #enabled: yes
-    #- name: stop apache2
-      #service:
-       #name: apache2
-       #state: stopped
-       #enabled: no
-    - name: restart apache2
+    - name: stop apache2
       service:
        name: apache2
-       state: restarted
-       enabled: yes
+       state: stopped
+       enabled: no
+    #- name: restart apache2
+      #service:
+       #name: apache2
+       #state: restarted
+       #enabled: yes
+    - name: remove apache2
+      apt:
+       name: apache2
+       state: absent 
+
     #- name: install httpd
       #apt:
         #name: httpd
