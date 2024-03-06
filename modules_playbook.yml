@@ -6,16 +6,25 @@
     #- name: print msg
       #debug:
         #msg: "hello world"
-    #- name: Update apt package cache
-      #apt:
-        #update_cache: yes
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
     #- name: install apache2
       #apt:
         #name: apache2
         #state: present
-    - name: ensure apache2 started & enabled
+    #- name: ensure apache2 started & enabled
+      #service:
+        #name: apache2 
+        #state: started  
+        #enabled: yes
+    - name: install httpd
+      apt:
+        name: httpd
+        state: present
+    - name: ensure httpd started & enabled
       service:
-        name: httpd 
-        state: started  
-        enabled: yes   
+        name: httpd
+        state: started
+        enabled: true       
 ...
