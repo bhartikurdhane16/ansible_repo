@@ -5,4 +5,8 @@
     - name: print msg
       debug:
         msg: "hello world"
+    - name: install package
+      apt:
+        name: nginx
+        state: present      
 ...
