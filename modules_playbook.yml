@@ -9,8 +9,8 @@
     - name: Update apt package cache
       apt:
         update_cache: yes
-    - name: install httpd
+    - name: install apache2
       apt:
-        name: httpd
+        name: apache2
         state: present      
 ...
