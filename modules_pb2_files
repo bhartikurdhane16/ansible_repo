@@ -5,6 +5,6 @@
    - name: copy file                          #first task name
      copy:                                          #module
        src: /home/ubuntu/ansible_repo/testfile.txt    #source path
-       dest: /media/                                  #destination path
+       dest: /media/testfile.txt                                 #destination path
        owner: bharti
 ...
