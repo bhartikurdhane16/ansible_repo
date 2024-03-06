@@ -1,0 +1,8 @@
+---
+- name: modules practice playbook
+  host: all
+  tasks:
+  - name: print msg
+    debug:
+      msg: "hello world"
+...
