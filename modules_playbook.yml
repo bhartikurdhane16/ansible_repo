@@ -2,7 +2,7 @@
 - name: modules practice playbook
   hosts: all
   tasks:
-  - name: print msg
-    debug:
-      msg: "hello world"
+    - name: print msg
+      debug:
+        msg: "hello world"
 ...
