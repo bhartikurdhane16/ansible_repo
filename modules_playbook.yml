@@ -1,6 +1,7 @@
 ---
 - name: modules practice playbook
   hosts: all
+  become: yes #command to run task with root prevalages
   tasks:
     - name: print msg
       debug:
