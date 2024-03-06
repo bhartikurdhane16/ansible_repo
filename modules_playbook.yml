@@ -1,6 +1,6 @@
 ---
 - name: modules practice playbook
-  host: all
+  hosts: all
   tasks:
   - name: print msg
     debug:
