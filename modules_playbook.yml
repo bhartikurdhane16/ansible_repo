@@ -5,6 +5,9 @@
     - name: print msg
       debug:
         msg: "hello world"
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
     - name: install nginx
       apt:
         name: nginx
