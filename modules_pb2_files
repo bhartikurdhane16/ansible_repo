@@ -7,5 +7,5 @@
      copy:                                          #module
        src: /home/ubuntu/ansible_repo/testfile.txt    #source path
        dest: /media/                                #destination path
-       owner: bharti
+       #owner: bharti
 ...
