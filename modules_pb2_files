@@ -1,0 +1,9 @@
+---
+- name: working with files 
+  hosts: all
+  tasks:
+   - name: copy file
+     copy:
+       src: /home/ubuntu/ansible_repo/testfile.txt
+       dest: /mnt
+...
