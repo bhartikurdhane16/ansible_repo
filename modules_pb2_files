@@ -5,5 +5,5 @@
    - name: copy file
      copy:
        src: /home/ubuntu/ansible_repo/testfile.txt
-       dest: /home/ubuntu
+       dest: /media/
 ...
