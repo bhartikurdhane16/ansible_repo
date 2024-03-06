@@ -1,9 +1,10 @@
 ---
-- name: working with files 
-  hosts: all
-  tasks:
-   - name: copy file
-     copy:
-       src: /home/ubuntu/ansible_repo/testfile.txt
-       dest: /media/
+- name: working with files                   #play name
+  hosts: all                                 #nodes
+  tasks:                                     #task
+   - name: copy file                          #first task name
+     copy:                                          #module
+       src: /home/ubuntu/ansible_repo/testfile.txt    #source path
+       dest: /media/                                  #destination path
+       owner: bharti
 ...
