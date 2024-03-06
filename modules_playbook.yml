@@ -15,7 +15,7 @@
         #state: present
     - name: ensure apache2 started & enabled
       service:
-        name: apache2 
+        name: httpd 
         state: started  
         enabled: yes   
 ...
