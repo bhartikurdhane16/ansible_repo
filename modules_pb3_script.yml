@@ -4,6 +4,6 @@
   become: yes
   tasks:
    - name: script to create file/dir
-     shell: /c/Users/anurang/Desktop/DevOps/ansible_repo/testscript.sh
+     shell: /home/ubuntu/ansible_repo/testscript.sh
 
 ...
