@@ -1,15 +1,20 @@
 ---
-- name: working with files                             #play name
+- name: working with copy & file files                 #play name
   hosts: all                                           #nodes
   become: yes                                          #work with root privelages
   tasks:                                         
-   - name: copy file                                  #first task name
-     copy:                                            #module
-       src: /home/ubuntu/ansible_repo/testfile.txt    #source path
-       dest: /media/                                  #destination path
+   #- name: copy file                                  #first task name
+     #copy:                                            #module
+       #src: /home/ubuntu/ansible_repo/testfile.txt    #source path
+       #dest: /media/                                  #destination path
        #owner: ubuntu                                  #change file ownership
        #group: ubuntu                                  #change group ownership
        #mode: u-x,g-wx,o-wx                            #set permission, also use octal no
        #backup: true                                   #backup
+
+   - name: creating a file
+     file:
+      path: /media/newfile.txt
+      state: touch
    
 ...
