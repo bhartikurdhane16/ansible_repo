@@ -1,15 +1,16 @@
 ---
-- name: working with files                   #play name
-  hosts: localhost                                 #nodes
-  become: yes
-  tasks:                                     #task
-   #- name: copy file                          #first task name
-     #copy:                                          #module
-       #src: /home/ubuntu/ansible_repo/testfile.txt    #source path
-       #dest: /media/                                #destination path
-   - name: Create IAM user
-     iam_user:
-       name: Bharti
-       state: present
-       password: 123
+- name: working with files                             #play name
+  hosts: all                                           #nodes
+  become: yes                                          #work with root privelages
+  tasks:                                         
+   - name: copy file                                  #first task name
+     copy:                                            #module
+       src: /home/ubuntu/ansible_repo/testfile.txt    #source path
+       dest: /media/                                  #destination path
+       owner: root
+   #- name: Create IAM user
+     #iam_user:
+       #name: Bharti
+       #state: present
+       #password: 123
 ...
