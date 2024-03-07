@@ -3,9 +3,13 @@
   hosts: all                                 #nodes
   become: yes
   tasks:                                     #task
-   - name: copy file                          #first task name
-     copy:                                          #module
-       src: /home/ubuntu/ansible_repo/testfile.txt    #source path
-       dest: /media/                                #destination path
-       #owner: bharti
+   #- name: copy file                          #first task name
+     #copy:                                          #module
+       #src: /home/ubuntu/ansible_repo/testfile.txt    #source path
+       #dest: /media/                                #destination path
+   - name: Create IAM user
+     iam_user:
+       name: Bharti
+       state: present
+       password: 123
 ...
