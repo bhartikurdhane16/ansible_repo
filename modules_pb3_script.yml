@@ -1,0 +1,7 @@
+---
+- name: run script on nodes
+  hosts: all
+  become: yes
+  tasks:
+   - name: script to install nginx
+     shell: /home/ubuntu/ansible_repo/nginx_installation_script.sh
