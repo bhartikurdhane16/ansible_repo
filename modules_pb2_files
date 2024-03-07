@@ -7,7 +7,7 @@
      copy:                                            #module
        src: /home/ubuntu/ansible_repo/testfile.txt    #source path
        dest: /media/                                  #destination path
-       owner: root
+       owner: ubuntu
    #- name: Create IAM user
      #iam_user:
        #name: Bharti
