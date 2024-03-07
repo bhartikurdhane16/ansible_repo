@@ -7,13 +7,9 @@
      copy:                                            #module
        src: /home/ubuntu/ansible_repo/testfile.txt    #source path
        dest: /media/                                  #destination path
-       owner: ubuntu                                  #change file ownership
-       group: ubuntu                                  #change group ownership
-       mode: u-x,g-wx,o-wx                            #set permission, also use octal no
-       backup: true
-   #- name: Create IAM user
-     #iam_user:
-       #name: Bharti
-       #state: present
-       #password: 123
+       #owner: ubuntu                                  #change file ownership
+       #group: ubuntu                                  #change group ownership
+       #mode: u-x,g-wx,o-wx                            #set permission, also use octal no
+       #backup: true                                   #backup
+   
 ...
