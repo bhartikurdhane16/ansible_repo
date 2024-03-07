@@ -19,6 +19,6 @@
 
    - name: creating a directory
      file:
-     path: /media/test_dir
-     state: directory   
+      path: /media/test_dir
+      state: directory   
 ...
