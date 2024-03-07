@@ -8,6 +8,8 @@
        src: /home/ubuntu/ansible_repo/testfile.txt    #source path
        dest: /media/                                  #destination path
        owner: ubuntu
+       group: ubuntu
+       mode: ugo=rwx
    #- name: Create IAM user
      #iam_user:
        #name: Bharti
