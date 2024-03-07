@@ -9,7 +9,7 @@
        dest: /media/                                  #destination path
        owner: ubuntu
        group: ubuntu
-       mode: ugo=rwx
+       mode: u-x, g-wx, o-wx
    #- name: Create IAM user
      #iam_user:
        #name: Bharti
