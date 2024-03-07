@@ -28,6 +28,6 @@
       path: /media/newfile.txt
       owner: ubuntu
       group: ubuntu
-      mode: 0555
+      mode: 0555                                          #permissions
 
 ...

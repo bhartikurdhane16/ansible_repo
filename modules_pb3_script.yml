@@ -3,5 +3,7 @@
   hosts: all
   become: yes
   tasks:
-   - name: script to install nginx
-     shell: /home/ubuntu/ansible_repo/nginx_installation_script.sh
+   - name: script to create file/dir
+     shell: /c/Users/anurang/Desktop/DevOps/ansible_repo/testscript.sh
+
+...
