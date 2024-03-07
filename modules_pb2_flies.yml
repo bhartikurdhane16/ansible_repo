@@ -20,6 +20,14 @@
    - name: creating a directory
      file:
       path: /media/test_dir
-      #state: directory 
-      state: absent  
+      state: directory     
+      #state: absent                                      #delete directory/file  
+
+   - name: change permission & ownership
+      file:
+       path: /media/test_dir
+       owner: ubuntu
+       group: ubuntu
+       mode: 777
+
 ...
