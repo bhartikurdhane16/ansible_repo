@@ -1,3 +1,3 @@
 #!/bin/bash
-touch scriptfile.txt
-mkdir script_dir
+touch /media/scriptfile.txt
+mkdir /media/script_dir
