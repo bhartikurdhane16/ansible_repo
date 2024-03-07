@@ -25,9 +25,9 @@
 
    - name: change permission & ownership
       file:
-       path: /media/test_dir
+       path: /media/newfile.txt
        owner: ubuntu
        group: ubuntu
-       mode: 777
+       mode: 0555
 
 ...
