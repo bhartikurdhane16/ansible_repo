@@ -16,8 +16,9 @@
      file:
       path: /media/newfile.txt
       state: touch
-   - name: create a directory
-     dir:
+
+   - name: creating a directory
+     file:
      path: /media/test_dir
-     state: mkdir   
+     state: directory   
 ...
