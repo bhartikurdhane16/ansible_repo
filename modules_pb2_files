@@ -1,6 +1,6 @@
 ---
 - name: working with files                   #play name
-  hosts: all                                 #nodes
+  hosts: localhost                                 #nodes
   become: yes
   tasks:                                     #task
    #- name: copy file                          #first task name
