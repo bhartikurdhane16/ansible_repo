@@ -23,11 +23,11 @@
       state: directory     
       #state: absent                                      #delete directory/file  
 
-   - name: change permission & ownership
-      file:
-       path: /media/newfile.txt
-       owner: ubuntu
-       group: ubuntu
-       mode: 0555
+   - name: change permssion & ownership
+     file:
+      path: /media/newfile.txt
+      owner: ubuntu
+      group: ubuntu
+      mode: 0555
 
 ...
