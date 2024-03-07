@@ -4,4 +4,4 @@
   become: yes
   tasks:
    - name: script to install nginx
-     shell: /home/ubuntu/ansible_repo/modules_pb3_script.yml
+     shell: /home/ubuntu/ansible_repo/nginx_installation_script.sh
