@@ -4,10 +4,10 @@
   become: yes
   tasks:
    - name: download css templete
-     get_url:
+     get_url:                          #module
        url: https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
        dest: /media/
-       #owner: ubuntu
-       #group: anant
-       #mode: 0644
+       #owner: chetan              # change ownership of file
+       #group: anant                #change group
+       #mode: 0644                   #permissions
 ...

@@ -1,0 +1,16 @@
+---
+- name: enable firewall service
+  hosts: all
+  tasks:
+   - name: enable firewalld
+     firewalld:
+      service: nginx
+      permenent: true
+      state: enabled
+
+   - name: reload firewalld
+     service: 
+      name: firewalld
+      state: enabled
+...
+
