@@ -10,7 +10,7 @@
      day: 8
      month: 3
      weekday: 5
-     user: ubuntu 
+     user: ubuntu
      job: /media/cronfile.txt
      #state: present                                              #create file
      #disabled: yes                                                 #disable file temperory
