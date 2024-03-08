@@ -7,7 +7,9 @@ command dry run your playbook:
 ansible-playbook your_playbook.yml --check
 
 command To run playbook on nodes:
-ansible-playbook your_playbook.yml 
+ansible-playbook your_playbook.yml
+
+modules types: copy module, file module, loop module, service module, package modules, script modules, command modules,
 
 examples of modules in playbook playbook:
 -------------------------------------------------------------------------------------------------------------------
@@ -83,6 +85,6 @@ task2: install apache2 on nodes ----(package & Service modules are used)
       apt:
        name: apache2
        state: absent 
-
-           
 ...
+
+--------------------------------------------------------------------------------------------------------------------------------------
