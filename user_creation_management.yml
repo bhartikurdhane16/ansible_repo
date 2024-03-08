@@ -12,4 +12,5 @@
       group: evc                       #add in single group
       groups: anant, tata              #add in multiple group 
       state: absent                     #delete user 
+      remove: yes                       # delete all user data like home directory 
 ...
