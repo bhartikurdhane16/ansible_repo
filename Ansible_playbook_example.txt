@@ -165,3 +165,16 @@ task5: install /start /enable nginx   [module: apt for ubuntu/yum for redhat , s
 
 ...  
 ----------------------------------------------------------------------------------------------------------------
+task6: kill already installed nginx service [module: shell] 
+
+---
+- name: kill/ stop already installed nginx service        #pgrep nginx-----to check pid of service run on node
+  hosts: all
+  become: yes
+  tasks:
+   - name: kill nginx service
+     ignore_errors: yes                                  #it ignore error if any while stopping process
+     shell: "pgrep nginx | xargs kill"                   # module: shell & command to kill process
+...  
+
+------------------------------------------------------------------------------------------------------------------

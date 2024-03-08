@@ -6,4 +6,9 @@
    - name: kill nginx service
      ignore_errors: yes                    #it ignore error if any while stopping process
      shell: "pgrep nginx | xargs kill"     # module: shell & command to kill process
+   - name: start service
+     service:
+       name: nginx
+       state: started
+       enabled: yes
 ...  
