@@ -6,18 +6,18 @@
     #- name: print msg                                   #script to pring msg msg
       #debug:
         #msg: "hello world"
-    #- name: Update apt package cache                    # script to apt update  
-      #apt:
-        #update_cache: yes
-    #- name: install apache2                             # script to install packages
-      #apt:
-        #name: apache2
-        #state: present
-    #- name: ensure apache2 started & enabled           #script to start & enable service
-      #service:
-        #name: apache2 
-        #state: started  
-        #enabled: yes
+    - name: Update apt package cache                    # script to apt update  
+      apt:
+        update_cache: yes
+    - name: install nginx                            # script to install packages
+      apt:
+        name: nginx
+        state: present
+    - name: ensure nginx started & enabled           #script to start & enable service
+      service:
+        name: nginx 
+        state: started  
+        enabled: yes
     #- name: stop apache2                               #Script to stop service
       #service:
        #name: apache2

@@ -1,0 +1,17 @@
+---
+- name: cron job to create file
+  hosts: all
+  tasks:
+  - name: add cron job
+    cron:
+     name: create cronfile.txt
+     minute: 48
+     hour: 16
+     day: 8
+     month: 3
+     weekday: friday
+     user: ubuntu 
+     job: /media/cronfile.txt
+     state: touch
+...
+      
