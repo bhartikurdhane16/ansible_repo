@@ -1,7 +1,13 @@
 ---
 - name: enable firewall service
   hosts: all
+  become: yes
   tasks:
+   - name: ensure firewalld is installed
+     package: 
+       name: firewalld
+       state: present
+        
    - name: enable firewalld
      firewalld:
       #service: nginx
