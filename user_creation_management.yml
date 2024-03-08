@@ -8,7 +8,7 @@
       name: chetan
       comment: creating chetan user
       #home: <path>                    #default home dir is /home/chetan , add path if want to give specifc home dir
-      shell: /bin/bash                #default shell   
+      shell: /bin/bash                #default shell       check with  #id chetan or #ls -l /home --user created
       #group: evc                       #add in single group
       #groups: anant, tata              #add in multiple group 
       #state: absent                     #delete user 
