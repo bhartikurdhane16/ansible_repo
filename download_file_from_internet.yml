@@ -7,7 +7,7 @@
      get_url:
        url: https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
        dest: /media/
-       owner: chetan
-       group: evc
-       mode: 0777
+       owner: ubuntu
+       group: anant
+       mode: 0644
 ...
