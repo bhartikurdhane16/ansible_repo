@@ -5,11 +5,11 @@
   - name: add cron job
     cron:
      name: create cronfile.txt
-     minute: 50
+     minute: 52
      hour: 16
      day: 8
      month: 3
-     weekday: friday
+     weekday: 5
      user: ubuntu 
      job: /media/cronfile.txt
      state: present
