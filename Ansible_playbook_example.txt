@@ -88,3 +88,25 @@ task2: install apache2 on nodes ----(package & Service modules are used)
 ...
 
 --------------------------------------------------------------------------------------------------------------------------------------
+task3: create cron job to create a file [ module: cron]
+---
+- name: cron job to create file
+  hosts: all
+  tasks:
+  - name: add cron job
+    cron:
+     name: create cronfile.txt
+     minute: 52
+     hour: 16
+     day: 8
+     month: 3
+     weekday: 5
+     user: ubuntu 
+     job: /media/cronfile.txt
+     #state: present                                              #create file
+     #disabled: yes                                                 #disable file temperory
+     state: absent                                                  #to delete cronjob
+
+...
+
+-----------------------------------------------------------------------------------------------------------------------------------------
