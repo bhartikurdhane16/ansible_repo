@@ -1,1 +1,15 @@
+Ansible Modules
+
+Command to check syntax of playbook:
+ansible-playbook your_playbook.yml --syntax-check
+
+command dry run your playbook:
+ansible-playbook your_playbook.yml --check
+
+command To run playbook on nodes:
+ansible-playbook your_playbook.yml 
+
+examples of modules in playbook playbook:
+
+1. 
 
