@@ -7,7 +7,7 @@
      package: 
        name: firewalld
        state: present
-        
+
    - name: enable firewalld
      firewalld:
       #service: nginx
@@ -18,6 +18,6 @@
    - name: reload firewalld
      service: 
       name: firewalld
-      state: enabled
+      state: reloaded
 ...
 
