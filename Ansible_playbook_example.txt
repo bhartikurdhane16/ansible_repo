@@ -129,5 +129,16 @@ task4: create user & set password [module: user]
       #remove: yes                       # delete all user data like home directory 
 ...
 #Playbook to set password to user:
-
+---
+- name: set password to user
+  hosts: all
+  become: yes
+  tasks:
+   - name: set password to chetan user
+     user:
+      name: chetan
+      update_password: always              #update password to existing user
+      #update_password: on_create          #use while creating user
+      password: "{{'chetan123' | password_hash ('sha512')}}"
+...
 -----------------------------------------------------------------------------------------------------------------------------------------
