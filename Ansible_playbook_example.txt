@@ -10,7 +10,7 @@ command To run playbook on nodes:
 ansible-playbook your_playbook.yml 
 
 examples of modules in playbook playbook:
-
+-------------------------------------------------------------------------------------------------------------------
 Task 1. create, copy file /directory & change ownership & permission of file.
 
 ---
@@ -47,3 +47,5 @@ Task 1. create, copy file /directory & change ownership & permission of file.
 
 ...
 
+---------------------------------------------------------------------------------------------------------------------------
+task2: install apache2 on nodes
