@@ -4,7 +4,8 @@
   tasks:
    - name: enable firewalld
      firewalld:
-      service: nginx
+      #service: nginx
+      port: 80/tcp
       permanent: true
       state: enabled
 
