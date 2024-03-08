@@ -1,6 +1,7 @@
 ---
 - name: user creation & management
   hosts: all
+  become: yes
   tasks:
    - name: create user & add into group & delete
      user:
