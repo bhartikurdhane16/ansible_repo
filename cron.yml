@@ -12,8 +12,9 @@
      weekday: 5
      user: ubuntu 
      job: /media/cronfile.txt
-     #state: present
-     disabled: yes
-     
+     #state: present                                              #create file
+     #disabled: yes                                                 #disable file temperory
+     state: absent                                                  #to delete cronjob
+
 ...
       
