@@ -1,0 +1,20 @@
+---
+- name: nginx installation & kill process
+  hosts:
+  become: yes
+  tasks:
+   - name: apt update
+     apt:
+      update_cache: yes
+
+   - name: install iginx
+     apt: 
+      name: nginx
+      state: present
+   - name: start & enable nginx service
+     service:
+       name: nginx
+       state: started
+       enabled: yes
+
+...  
