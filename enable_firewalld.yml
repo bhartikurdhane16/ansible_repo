@@ -5,7 +5,7 @@
    - name: enable firewalld
      firewalld:
       service: nginx
-      permenent: true
+      permanent: true
       state: enabled
 
    - name: reload firewalld
