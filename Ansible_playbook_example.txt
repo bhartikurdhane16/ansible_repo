@@ -142,3 +142,26 @@ task4: create user & set password [module: user]
       password: "{{'chetan123' | password_hash ('sha512')}}"
 ...
 -----------------------------------------------------------------------------------------------------------------------------------------
+task5: install /start /enable nginx   [module: apt for ubuntu/yum for redhat , service]
+
+---
+- name: nginx installation 
+  hosts: all
+  become: yes
+  tasks:
+   - name: apt update
+     apt:
+      update_cache: yes
+
+   - name: install iginx
+     apt: 
+      name: nginx
+      state: present
+   - name: start & enable nginx service
+     service:
+       name: nginx
+       state: started
+       enabled: yes
+
+...  
+----------------------------------------------------------------------------------------------------------------

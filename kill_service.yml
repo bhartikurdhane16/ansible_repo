@@ -1,20 +1,9 @@
 ---
-- name: nginx installation & kill process
+- name: kill/ stop already installed nginx service        #pgrep nginx-----to check pid of service run on node
   hosts: all
   become: yes
   tasks:
-   - name: apt update
-     apt:
-      update_cache: yes
-
-   - name: install iginx
-     apt: 
-      name: nginx
-      state: present
-   - name: start & enable nginx service
-     service:
-       name: nginx
-       state: started
-       enabled: yes
-
+   - name: kill nginx service
+     ignore_errors: yes                    #it ignore error if any while stopping process
+     shell: "pgrep nginx | xargs kill"     # module: shell & command to kill process
 ...  
