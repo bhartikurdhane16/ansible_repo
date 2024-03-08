@@ -108,7 +108,7 @@ task3: create cron job to create a file [ module: cron]
      state: absent                                                  #to delete cronjob
 
 ...
-
+#check with command crontab-l  at nodes
 --------------------------------------------------------------------------------------------------------------------------------
 task4: create user & set password [module: user]
 # playbook to create user
@@ -128,5 +128,6 @@ task4: create user & set password [module: user]
       #state: absent                     #delete user 
       #remove: yes                       # delete all user data like home directory 
 ...
-#check with command crontab-l  at nodes
+#Playbook to set password to user:
+
 -----------------------------------------------------------------------------------------------------------------------------------------
