@@ -108,5 +108,25 @@ task3: create cron job to create a file [ module: cron]
      state: absent                                                  #to delete cronjob
 
 ...
+
+--------------------------------------------------------------------------------------------------------------------------------
+task4: create user & set password [module: user]
+# playbook to create user
+---
+- name: user creation & management
+  hosts: all
+  become: yes
+  tasks:
+   - name: create user & add into group & delete
+     user:
+      name: chetan
+      comment: creating chetan user
+      #home: <path>                    #default home dir is /home/chetan , add path if want to give specifc home dir
+      shell: /bin/bash                #default shell       check with  #id chetan or #ls -l /home --user created
+      #group: evc                       #add in single group
+      #groups: anant, tata              #add in multiple group 
+      #state: absent                     #delete user 
+      #remove: yes                       # delete all user data like home directory 
+...
 #check with command crontab-l  at nodes
 -----------------------------------------------------------------------------------------------------------------------------------------
