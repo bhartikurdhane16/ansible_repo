@@ -12,6 +12,8 @@
      weekday: 5
      user: ubuntu 
      job: /media/cronfile.txt
-     state: present
+     #state: present
+     disabled: yes
+     
 ...
       
