@@ -1,0 +1,13 @@
+---
+- name: download css templete from internet
+  hosts: all
+  become: yes
+  tasks:
+   - name: download css templete
+     get_url:
+       url: https://www.free-css.com/assets/files/free-css-templates/download/page296/oxer.zip
+       dest: /media/
+       owner: chetan
+       group: evc
+       mode: 0777
+...
