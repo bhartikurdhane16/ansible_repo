@@ -1,0 +1,11 @@
+---
+- name: user creation & management
+  hosts: all
+  tasks:
+   - name: create user & add into group & delete
+     user:
+      name: chetan
+      comment: creating chetan user
+      #home: <path>                    #default home dir is /home/chetan , add path if want to give specifc home dir
+      shell: /bin/bash                #default shell          
+...
