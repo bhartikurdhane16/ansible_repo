@@ -11,5 +11,39 @@ ansible-playbook your_playbook.yml
 
 examples of modules in playbook playbook:
 
-1. 
+Task 1. create, copy file /directory & change ownership & permission of file.
+
+---
+- name: working with copy & file files                 #play name
+  hosts: all                                           #nodes
+  become: yes                                          #work with root privelages
+  tasks:                                         
+   - name: copy file                                  #first task name
+     copy:                                            #module
+       src: /home/ubuntu/ansible_repo/testfile.txt    #source path
+       dest: /media/                                  #destination path
+       owner: ubuntu                                  #change file ownership
+       group: ubuntu                                  #change group ownership
+       mode: u-x,g-wx,o-wx                            #set permission, also use octal no
+       backup: true                                   #backup
+
+   - name: creating a file
+     file:
+      path: /media/newfile.txt
+      state: touch
+
+   - name: creating a directory
+     file:
+      path: /media/test_dir
+      state: directory     
+      #state: absent                                      #delete directory/file  
+
+   - name: change permssion & ownership
+     file:
+      path: /media/newfile.txt
+      owner: ubuntu
+      group: ubuntu
+      mode: 0555                                          #permissions
+
+...
 
