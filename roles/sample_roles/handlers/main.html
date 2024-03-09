@@ -1,1 +1,11 @@
-<h1>hello world this is msg from ansible master</h1>
+---
+#- name: ensure nginx start & enabled
+  #hosts: all
+  #become: yes
+  #tasks:
+   - name: start & enable nginx
+     service:
+      name: nginx
+      state: started
+      enabled: yes
+...
