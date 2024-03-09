@@ -12,7 +12,8 @@
      copy:
       src: index.html
       dest: /var/www/html/index.html
-     notify: starting nginx
+     notify: 
+        - starting nginx
 
    - name: print msg
      debug:
