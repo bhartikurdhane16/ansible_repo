@@ -1,0 +1,7 @@
+---
+- name: playbook for sample roles
+  hosts: all
+  become: yes
+  tasks:
+   roles: sample_roles
+...

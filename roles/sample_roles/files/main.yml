@@ -1,0 +1,11 @@
+---
+- name: ensure nginx start & enabled
+  hosts: all
+  become: yes
+  tasks:
+   - name: start & enable nginx
+     service:
+      name: nginx
+      state: started
+      enabled: yes
+...

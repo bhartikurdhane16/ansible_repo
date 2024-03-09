@@ -1,0 +1,21 @@
+---
+- name: nginx installation 
+  hosts:
+  become: yes
+  tasks:
+   - name: installing nginx
+     package:
+      name: nginx
+      state: present
+    
+   - name: customizing index.html page 
+     copy:
+      src: index.html
+      dest: /var/www/html/index.html
+     notify: starting nginx
+
+   -  name: print msg
+      debug:
+      msg: "{{url}}"
+
+...      
