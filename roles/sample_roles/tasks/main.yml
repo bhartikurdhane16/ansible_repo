@@ -11,7 +11,7 @@
    - name: customizing index.html page 
      copy:
       src: index.html
-      dest: /var/www/html/index.html
+      dest: /var/www/html/index.nginx-debian.html 
      notify: 
         - starting nginx
 
