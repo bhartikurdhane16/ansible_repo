@@ -1,15 +1,16 @@
 ---
 - name: my second playbook
   hosts: all
+  become: yes
   tasks:
     - name: my first task
       debug:
         msg: "hello everyone"
-      tags: tag-1
+      tags: first tag
     - name: my second task
       debug:
         msg: "good morning"
-      tags: tag-2  
+      tags: second tag 
     - name: bharti's hobbies list
       debug:
         msg:
@@ -17,7 +18,7 @@
           - coocking
           - music
           - and the most fevorite is sleeping 
-      tags: tag-3    
+      tags: third tag    
 
     - name: bharti's diet plan
       debug:
@@ -27,24 +28,24 @@
           - lunch arount 1:30 pm
           - tea around 5:00 pm
           - dinner arount 9:30 pm
-      tags: tag-4
+      tags: four tag
     - name: my address details
       debug:
         msg: 
           city: ch. Sambhaji Nagar
           state: Maharashtra
           Country: India
-      tags: tag-5
+      tags: five tag
     - name: msg for you
       debug:
         msg: |
           heyyyy
           good morning
           how are you doing?????? 
-      tags: tag-6
+      tags: six tag
     - name: second msg
       debug:
         msg: |  
           hello,i am doing well
-      tags: tag-7            
+      tags: seven tag            
 ...
