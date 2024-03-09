@@ -14,8 +14,8 @@
       dest: /var/www/html/index.html
      notify: starting nginx
 
-   -  name: print msg
-      debug:
+   - name: print msg
+     debug:
       msg: "{{URL}}"
 
 ...      
