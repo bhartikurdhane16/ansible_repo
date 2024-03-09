@@ -196,3 +196,33 @@ task7: download css temple /file from internet [module: get_url]
 
 -------------------------------------------------------------------------------------------------------------------
 
+task8 : usecase of tags
+
+#tags used to run specific task from playbook.
+#commands: ansible-playbook <playbook name> --list-tags ------------------listout tags
+#ansible-playbook <playbook name> -t <tag name> -----------perform taged task only
+#ansible-playbook <playbook name> --skip-tags <tag name> -----------to skip perticular tag
+
+---
+- name: my second playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: my first task
+      debug:
+        msg: "hello everyone"
+      tags: firsttag
+    - name: my second task
+      debug:
+        msg: "good morning"
+      tags: secondtag 
+    - name: bharti's hobbies list
+      debug:
+        msg:
+          - paining
+          - coocking
+          - music
+          - and the most fevorite is sleeping 
+      tags: thirdtag
+...    
+----------------------------------------------------------------------------------------------------------------------

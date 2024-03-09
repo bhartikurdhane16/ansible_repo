@@ -1,3 +1,8 @@
+#tags used to run specific task from playbook.
+#commands: ansible-playbook <playbook name> --list-tags ------------------listout tags
+#ansible-playbook <playbook name> -t <tag name> -----------perform taged task only
+#ansible-playbook <playbook name> --skip-tags <tag name> -----------to skip perticular tag
+
 ---
 - name: my second playbook
   hosts: all
@@ -42,10 +47,6 @@
           heyyyy
           good morning
           how are you doing?????? 
-      tags: six tag
-    - name: second msg
-      debug:
-        msg: |  
-          hello,i am doing well
-      tags: seventag            
+      tags: sixtag
+               
 ...
