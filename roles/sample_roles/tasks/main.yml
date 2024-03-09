@@ -16,6 +16,6 @@
 
    -  name: print msg
       debug:
-      msg: "{{url}}"
+      msg: "{{URL}}"
 
 ...      
