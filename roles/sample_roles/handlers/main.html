@@ -4,8 +4,8 @@
   #become: yes
   #tasks:
    - name: start & enable nginx
-     service:
-      name: nginx
-      state: started
-      enabled: yes
+     systemd:
+       name: nginx
+       state: started
+       enabled: yes
 ...
