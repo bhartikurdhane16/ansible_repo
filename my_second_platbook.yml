@@ -5,9 +5,11 @@
     - name: my first task
       debug:
         msg: "hello everyone"
+      tags: 1
     - name: my second task
       debug:
         msg: "good morning"
+      tags: 2  
     - name: bharti's hobbies list
       debug:
         msg:
@@ -15,6 +17,8 @@
           - coocking
           - music
           - and the most fevorite is sleeping 
+      tags: 3    
+
     - name: bharti's diet plan
       debug:
         msg: 
@@ -22,21 +26,25 @@
           - take fruits at 11:0 am
           - lunch arount 1:30 pm
           - tea around 5:00 pm
-          - dinner arount 9:30 pm 
+          - dinner arount 9:30 pm
+      tags: 4
     - name: my address details
       debug:
         msg: 
           city: ch. Sambhaji Nagar
           state: Maharashtra
           Country: India
+      tags: 5
     - name: msg for you
       debug:
         msg: |
           heyyyy
           good morning
-          how are you doing??????      
+          how are you doing?????? 
+      tags: 6
     - name: second msg
       debug:
         msg: |  
-          hello,i am doing well            
+          hello,i am doing well
+      tags: 7            
 ...
