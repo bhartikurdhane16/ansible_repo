@@ -1,8 +1,6 @@
 ---
-#- name: nginx installation 
-  #hosts: all
-  #become: yes
-  #tasks:
+
+ 
    - name: installing nginx
      package:
       name: nginx
@@ -11,9 +9,9 @@
    - name: customizing index.html page 
      copy:
       src: index.html
-      dest: /var/www/html/
+      dest: /var/www/html/index.html
      notify: 
-        - starting nginx
+        - starting & enable nginx
 
    - name: print msg
      debug:

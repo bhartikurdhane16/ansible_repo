@@ -1,9 +1,5 @@
 ---
-#- name: ensure nginx start & enabled
-  #hosts: all
-  #become: yes
-  #tasks:
-   - name: start & enable nginx
+   - name: starting & enable nginx
      systemd:
        name: nginx
        state: started
