@@ -5,9 +5,9 @@
   tasks:
     - name: stop nginx
       service:
-      name: nginx
-      state: stopped
-      enabled: no
+       name: nginx
+       state: stopped
+       enabled: no
 
     - name: Remove nginx
       apt:
