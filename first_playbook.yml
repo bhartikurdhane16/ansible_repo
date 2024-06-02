@@ -13,5 +13,5 @@
       apt:
         name: nginx
         state: absent
-        
+    - name: 
 ...
