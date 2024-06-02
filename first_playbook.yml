@@ -1,14 +1,4 @@
 ---
-- name: test playbook
-  hosts: all
-  become: yes
-  tasks:
-    - name: remove nginx    #task 
-      apt:                #module
-      name: nginx 
-        state: absent
-...
----
 - name: Test Playbook
   hosts: all
   become: yes
