@@ -3,10 +3,10 @@
   hosts: all
   become: yes
   tasks:
-    - name: stop nginx
-      service:
-       name: nginx
-       state: stopped
+    #- name: stop nginx
+     # service:
+      # name: nginx
+       #state: stopped
        enabled: no
 
     - name: Remove nginx
