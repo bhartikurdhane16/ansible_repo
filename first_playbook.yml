@@ -31,4 +31,6 @@
       file:
        path: /media/file1.txt
        state: touch
+       owner: ubuntu
+       
 ...
