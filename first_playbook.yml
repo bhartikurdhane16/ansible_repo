@@ -4,7 +4,8 @@
   become: yes
   tasks:
     - name: stop nginx
-      service
+      service:
+      name: 
     - name: Remove nginx
       apt:
         name: nginx
