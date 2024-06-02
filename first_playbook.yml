@@ -29,5 +29,6 @@
 
     - name: create file
       file:
-       state: 
+       path:
+       state: touch
 ...
