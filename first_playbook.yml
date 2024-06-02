@@ -7,5 +7,4 @@
     apt:                #module
     - name: nginx 
       state: absent
-
 ...
