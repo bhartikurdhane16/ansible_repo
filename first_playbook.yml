@@ -26,5 +26,4 @@
        name: nginx
        status: started
        enabled: yes
-
-        
+...
