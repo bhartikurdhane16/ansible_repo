@@ -13,8 +13,10 @@
       apt:
         name: nginx
         state: absent
+
     - name: update catche
       apt:
       update_cache: yes
-      
+    
+
 ...
