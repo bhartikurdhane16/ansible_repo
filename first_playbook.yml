@@ -3,6 +3,7 @@
   hosts: all
   become: yes
   tasks:
+    - name: 
     - name: Remove nginx
       apt:
         name: nginx
