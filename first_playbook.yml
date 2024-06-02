@@ -1,5 +1,6 @@
 ---
 - name: tes playbook
   hosts: all
+  become: yes
   
 ...
