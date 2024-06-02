@@ -15,5 +15,6 @@
         state: absent
     - name: update catche
       apt:
-      cache
+      update_cache: yes
+      
 ...
