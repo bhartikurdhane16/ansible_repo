@@ -4,6 +4,7 @@
   become: yes
   tasks:
   - name: stop nginx
+    apt:
     
     state: absent
 
