@@ -1,4 +1,4 @@
 ---
--name:playbook to install nginx
-
+-name: playbook to install nginx
+ hosts: all
 ...
