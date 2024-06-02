@@ -3,9 +3,9 @@
   hosts: all
   become: yes
   tasks:
-  - name: stop nginx
+  - name: stop nginx    task 
     apt:
-    
+
     state: absent
 
 ...
