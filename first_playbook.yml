@@ -16,7 +16,7 @@
 
     - name: update catche
       apt:
-      update_cache: yes
+       update_cache: yes
     - name: install nginx
       apt:
        name: nginx
