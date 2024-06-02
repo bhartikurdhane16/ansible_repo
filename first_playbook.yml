@@ -29,6 +29,6 @@
 
     - name: create file
       file:
-       path:
+       path: /media/file1.txt
        state: touch
 ...
