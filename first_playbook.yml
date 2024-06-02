@@ -33,5 +33,5 @@
        state: touch
        owner: ubuntu
        group: ubuntu
-       mode: 
+       mode: u+x,g+
 ...
