@@ -8,3 +8,13 @@
       - name: nginx 
         state: absent
 ...
+---
+- name: Test Playbook
+  hosts: all
+  become: yes
+  tasks:
+    - name: Remove nginx
+      apt:
+        name: nginx
+        state: absent
+...
