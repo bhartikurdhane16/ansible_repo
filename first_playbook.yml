@@ -3,8 +3,8 @@
   hosts: all
   become: yes
   tasks:
-    - name: remove nginx    #task 
+    name: remove nginx    #task 
       apt:                #module
-      - name: nginx 
+      name: nginx 
         state: absent
 ...
