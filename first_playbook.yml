@@ -1,4 +1,4 @@
 ---
--name: tes playbook
- hosts: all
+- name: tes playbook
+  hosts: all
 ...
