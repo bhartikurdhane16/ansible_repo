@@ -6,6 +6,7 @@
     - name: stop nginx
       service:
       name: nginx
+      state: absent
       
     - name: Remove nginx
       apt:
