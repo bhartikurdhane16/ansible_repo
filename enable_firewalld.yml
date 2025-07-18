@@ -4,20 +4,20 @@
   become: yes
   tasks:
    - name: ensure firewalld is installed
-     package: 
-       name: firewalld
-       state: present
+     package:     #module
+       name: firewalld     #service name
+       state: present      
 
    - name: enable firewalld
-     firewalld:
+     firewalld:        #service 
       #service: nginx
       port: 80/tcp
       permanent: true
       state: enabled
 
    - name: reload firewalld
-     service: 
+     service:      #module
       name: firewalld
-      state: reloaded
+      state: reloaded    
 ...
 
